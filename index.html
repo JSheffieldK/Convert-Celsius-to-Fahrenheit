@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Convert Celsius to Fahrenheit</title>
+</head>
+<body>
+    <p id="convertToCelsius"></p>
+<script>
+    function convertToF(celsius){
+
+        //Step 1. Convert Fahrenheit to Celsius
+        let fahrenheit = celsius*9/5+32;
+
+        //Step 2. Return New Value
+        return fahrenheit;
+    }
+var number=prompt("Please Enter A Number");
+convertToF(number);
+document.getElementById("convertToCelsius").innerHTML=convertToF(number);
+
+</script>
+</body>
+</html>
